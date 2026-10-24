@@ -406,6 +406,8 @@ Before you push:
 - [ ] **Images are small:** JPG, ~1600 px wide, under ~500 KB each.
 - [ ] **Videos are small:** under ~20 MB each. GitHub warns above 50 MB and refuses files above 100 MB.
 - [ ] You checked it once in the local preview, on a narrow window too (or press F12 → phone icon in Chrome).
+- [ ] If you changed `style.css`, `script.js` or `projects.js`: raise the `?v=` number on those links in `index.html`,
+      so visitors' browsers load the new versions instead of old saved copies.
 
 ### Image and video tips
 - **Screenshots:** PNG screenshots are huge. Save as JPG, or open in Paint → *Resize* to 1600 px wide → *Save as JPEG*.
@@ -424,6 +426,7 @@ Before you push:
 | Page is blank / nothing animates | A typo in `projects.js` (a missing comma or quote). Press F12 → *Console* to see the error and its line number |
 | Card shows but no video | The `video:` path doesn't match the file, or the file is still uploading |
 | Changes don't show online | Wait 1–2 minutes after pushing, then hard-refresh with Ctrl + F5 |
+| Site looks broken/unstyled right after a push | The browser mixed the new page with old saved CSS/JS. Raise the `?v=` number on `style.css`, `projects.js` and `script.js` in `index.html` (e.g. `?v=2` → `?v=3`) and push again |
 | Changes don't show locally | Hard-refresh with Ctrl + F5 (the browser cached the old file) |
 
 The F12 console is your best friend: almost every problem shows up there as a red error with a file name and line number.
