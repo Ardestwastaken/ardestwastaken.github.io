@@ -535,6 +535,11 @@ if (!hasGsap) {
       })
     }
 
+    // Portrait: the circle pops in, then the badge slides up
+    gsap.timeline({ scrollTrigger: { trigger: '.portrait', start: 'top 85%' } })
+      .from('.portrait__circle', { scale: 0.6, opacity: 0, duration: 1.1, ease: 'back.out(1.6)' })
+      .from('.portrait__badge', { y: 15, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.5')
+
     // Project cards come in as they scroll into view
     gsap.set(cards, { y: 50, opacity: 0 })
     ScrollTrigger.batch(cards, {

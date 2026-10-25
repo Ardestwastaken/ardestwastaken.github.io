@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
   <!-- The ?v= number makes browsers fetch the new file instead of an old saved copy.
        Raise it (v=3, v=4, ...) on all three files whenever you push changes to them. -->
-  <link rel="stylesheet" href="style.css?v=2" />
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
 
 <body class="is-loading">
@@ -81,28 +81,38 @@
 
     <!-- About + compact toolkit -->
     <section class="about section" id="about">
-      <div class="container">
-        <p class="eyebrow" data-reveal>Introduction</p>
-        <h2 class="title" data-split>Overview.</h2>
-        <p class="about__text" data-scrub-text>
-          I'm Alexander De Smet, a Digital Arts &amp; Entertainment student at Howest in Belgium. I love the low-level side
-          of games: engines, rendering and realtime lighting. In my free time I dive into things the curriculum doesn't
-          cover, from FFT oceans to Lumen-style global illumination, and I team up for game jams whenever I can.
-        </p>
+      <div class="container about__grid">
+        <div class="about__content">
+          <p class="eyebrow" data-reveal>Introduction</p>
+          <h2 class="title" data-split>Overview.</h2>
+          <p class="about__text" data-scrub-text>
+            I'm Alexander De Smet, a Digital Arts &amp; Entertainment student at Howest in Belgium. At DAE i follow GD, 
+            but aside from normal programming I've taken a particular interest in Graphical Porgramming. Thats why, in my free time,
+             I like to dive into things the curriculum doesn't cover. My interests range from things like FFT oceans to Lumen-style global illumination, 
+             and I team up for game jams whenever I can.
+          </p>
 
-        <div class="toolkit" data-reveal>
-          <span class="toolkit__label">Toolkit</span>
-          <ul class="toolkit__list">
-            <li><i class="devicon-cplusplus-plain"></i>C++</li>
-            <li><i class="devicon-csharp-plain"></i>C#</li>
-            <li><i class="devicon-opengl-plain"></i>OpenGL</li>
-            <li>Vulkan</li>
-            <li><i class="devicon-unrealengine-original"></i>Unreal</li>
-            <li><i class="devicon-unity-plain"></i>Unity</li>
-            <li><i class="devicon-python-plain"></i>Python</li>
-            <li><i class="devicon-git-plain"></i>Git</li>
-          </ul>
+          <div class="toolkit" data-reveal>
+            <span class="toolkit__label">Toolkit</span>
+            <ul class="toolkit__list">
+              <li><i class="devicon-cplusplus-plain"></i>C++</li>
+              <li><i class="devicon-csharp-plain"></i>C#</li>
+              <li><i class="devicon-opengl-plain"></i>OpenGL</li>
+              <li>Vulkan</li>
+              <li><i class="devicon-unrealengine-original"></i>Unreal</li>
+              <li><i class="devicon-unity-plain"></i>Unity</li>
+              <li><i class="devicon-python-plain"></i>Python</li>
+              <li><i class="devicon-git-plain"></i>Git</li>
+            </ul>
+          </div>
         </div>
+
+        <figure class="portrait">
+          <div class="portrait__circle">
+            <img src="./assets/me.webp" alt="Portrait of Alexander De Smet" class="portrait__img" width="1278" height="1704" />
+          </div>
+          <figcaption class="portrait__badge"><span class="dot"></span> Howest DAE · Belgium</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -133,8 +143,7 @@
       <div class="container">
         <p class="eyebrow" data-reveal>Get in touch</p>
         <h2 class="contact__title">
-          <span class="line"><span data-line>Let's build</span></span>
-          <span class="line"><span data-line class="accent">something.</span></span>
+          <span class="line"><span data-line>Let's Connect</span></span>
         </h2>
 
         <div class="contact__grid">
@@ -195,8 +204,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
   <script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>
-  <script src="./projects.js?v=2"></script>
-  <script src="./script.js?v=2"></script>
+  <script src="./projects.js?v=3"></script>
+  <script src="./script.js?v=3"></script>
 </body>
 
 </html>
