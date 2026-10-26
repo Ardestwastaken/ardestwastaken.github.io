@@ -689,7 +689,7 @@ button {
 /* The photo has a transparent background, so this colour shows behind it.
    Use #f2efe9 (white-ish) or #000 (black). */
 .portrait__circle {
-  --portrait-bg: #0e0f19;
+  --portrait-bg: #0d0e17;
   position: relative;
   width: clamp(18rem, 22vw, 28rem);
   aspect-ratio: 1;

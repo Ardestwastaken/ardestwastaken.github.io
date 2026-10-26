@@ -427,7 +427,7 @@ Before you push:
 | Card shows but no video | The `video:` path doesn't match the file, or the file is still uploading |
 | Changes don't show online | Wait 1–2 minutes after pushing, then hard-refresh with Ctrl + F5 |
 | Site looks broken/unstyled right after a push | The browser mixed the new page with old saved CSS/JS. Raise the `?v=` number on `style.css`, `projects.js` and `script.js` in `index.html` (e.g. `?v=2` → `?v=3`) and push again |
-| Changes don't show locally | Hard-refresh with Ctrl + F5 (the browser cached the old file) |
+| Changes don't show locally | Make sure you're using `preview.bat` (its server tells the browser never to cache). If you started `python -m http.server` yourself, the browser keeps old copies: press Ctrl + F5 |
 
 The F12 console is your best friend: almost every problem shows up there as a red error with a file name and line number.
 
